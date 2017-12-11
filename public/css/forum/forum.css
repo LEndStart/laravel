@@ -1,0 +1,30 @@
+.box{
+    background-color: white;
+    width:1020px;
+    height:640px;
+    position:relative;/*相对定位:参考物*/
+    float:left;
+    margin:20px 10px;
+    text-align:center;
+    border:2px blue solid;
+}
+#pwn{
+    position: absolute;
+    left: 220px;
+    top:400px;
+}
+#web{
+    position: absolute;
+    left: 520px;
+    top:400px;
+}
+#reverse{
+    position: absolute;
+    left: 820px;
+    top:400px;
+}
+#crypto{
+    position: absolute;
+    left: 1120px;
+    top:400px;
+}

@@ -1,0 +1,33 @@
+.font3 {
+    font-size: 24px;
+}
+.box{
+    background-color: white;
+    width:1020px;
+    height:40px;
+    position:absolute;/*相对定位:参考物*/
+    left: 190px;
+    top:300px;
+    margin:10px 10px;
+    text-align: left;
+    font-size:30px;
+}
+
+.content{
+    background-color: white;
+    width:1080px;
+    height:400px;
+    position:absolute;/*相对定位:参考物*/
+    left: 190px;
+    top:350px;
+    margin:0px 0px;
+    border:0px black solid;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius:15px;
+    text-align: left;
+    font-size:26px;
+    font-family: "Arial Black";
+
+}
+

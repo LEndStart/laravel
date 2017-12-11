@@ -1,0 +1,32 @@
+#box{
+    background-color: white;
+    width:1080px;
+    height:40px;
+    position:absolute;/*相对定位:参考物*/
+    left: 190px;
+    top:400px;
+    margin:10px 10px;
+    border:2px black solid;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius:15px;
+    text-align: left;
+    font-size:26px;
+    font-family: "Arial Black";
+}
+#textbox{
+    background-color: white;
+    width:1080px;
+    height:400px;
+    position:absolute;/*相对定位:参考物*/
+    left: 190px;
+    top:500px;
+    margin:10px 10px;
+    border:2px black solid;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius:15px;
+    text-align: left;
+    font-size:26px;
+    font-family: "Arial Black";
+}

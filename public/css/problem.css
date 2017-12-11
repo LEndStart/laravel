@@ -1,0 +1,28 @@
+.box1,.box2,.box3,.box4,.box5,.box6{
+    background-color: white;
+    width:900px;
+    height:640px;
+    position:relative;/*相对定位:参考物*/
+    float:left;
+    margin:20px 10px;
+    text-align:center;
+    border:2px blue solid;
+}
+.pwnbox,.reversebox,.webbox,.cryptobox,.miscbox,.androidbox{/*混合选择器：描述的越详细优先级越高*/
+    position:relative;/*相对定位:参考物*/
+    float:left;/*浮动:左浮动 与父元素的左端对齐 依次的往右端显示 一行显示不下就换行接着依次显示*/
+    width:180px;
+    height:105px;
+    margin:18px 20px;
+    background:rgba(241,124,103,1);/*red红色 green绿色 blue蓝色0-255  a透明度0-1*/
+    /*text-align:center;文本居中*/
+}
+.reversebox{
+    background:rgba(0,255,121,1);
+}
+.webbox{
+    background:rgba(233,240,29,1);
+}
+.cryptobox{
+    background:rgba(213,153,168,1);
+}
