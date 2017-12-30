@@ -57,6 +57,12 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
+                                        <a href="{{ asset('createteam') }}">
+                                            创建队伍
+                                        </a>
+                                        <a href="{{ asset('jointeam') }}">
+                                            加入队伍
+                                        </a>
                                         <a href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -84,7 +90,8 @@
                 <li class="{{Request::getPathInfo()=='/against'?'active':''}}"><a href="{{ asset('against') }}">对抗</a></li>
                 <li class="{{Request::getPathInfo()=='/tools'?'active':''}}"><a href="{{ asset('tools') }}">工具</a></li>
                 <li class="{{Request::getPathInfo()=='/list'?'active':''}}"><a href="{{ asset('list') }}">排行榜</a></li>
-                <li class="{{Request::getPathInfo()=='##'?'active':''}}"><a href="##">联系我们</a></li>
+                <li class="{{Request::getPathInfo()=='/teamlist'?'active':''}}"><a href="{{ asset('teamlist') }}">队伍排行榜</a></li>
+                <li class="{{Request::getPathInfo()=='/broad'?'active':''}}"><a href="{{ asset('broad') }}">公告栏</a></li>
             </ul>
         </div>
 

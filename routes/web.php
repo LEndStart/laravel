@@ -28,10 +28,21 @@ Route::get('passage', ['uses'=>'CtfController@passage']);
 
 Route::any('wp',['uses'=>'CtfController@wp']);
 
+
+//队伍
+Route::any('createteam',['uses'=>'TeamController@createteam']);
+Route::any('jointeam',['uses'=>'TeamController@jointeam']);
+Route::any('teamlist',['uses'=>'TeamController@teamlist']);
 //Route::any('upload', ['uses'=>'CtfController@upload']);
 //Route::any('upwp',['uses'=>'CtfController@upwp']);
 //Route::any('fopenwp',['uses'=>'CtfController@fopenwp']);
-
+Route::get('broad', function () {
+    if(Auth::check() == false)
+    {
+        return redirect()->intended('/login');
+    }
+    else return view('broad');
+});
 
 Route::get('competition', function () {
     if(Auth::check() == false)
