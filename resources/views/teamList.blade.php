@@ -14,8 +14,8 @@
                     <th width="60">排名</th>
                     <th width="150">队伍ID</th>
                     <th width="150">队伍名</th>
-                    <th width="200">分数</th>
-
+                    <th width="60">分数</th>
+                    <th width="60">组员</th>
                 </tr>
                 @foreach($results as $team)
                     <tr>
@@ -24,6 +24,10 @@
                         <th>{{$team['id']}}</th>
                         <th>{{$team['name']}}</th>
                         <th>{{$team['score']}}</th>
+
+                        @foreach($team['member'] as $member)
+                            <th>{{$member}}</th>
+                        @endforeach
                     </tr>
                 @endforeach
                 </tbody>
